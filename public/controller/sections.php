@@ -27,7 +27,7 @@ class DS_sections
 	{
 	}
 
-	public function ds_sections_hero_code()
+	public function ds_sections_index_code()
 	{
 
         $args = array(
@@ -37,7 +37,7 @@ class DS_sections
         );
         $sections = get_posts($args);
 
-	include_once ds_atconv2_PLAGIN_DIR . '/public/partials/sections/hero.php';
+	include_once ds_atconv2_PLAGIN_DIR . '/public/partials/sections/index.php';
 	}
 
 }

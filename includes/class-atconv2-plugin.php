@@ -180,7 +180,7 @@ class Atconv2_Plugin {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 		$DS_sections = new DS_sections();
-		$this->loader->add_shortcode( 'ds_sections_hero_code', $DS_sections, 'ds_sections_hero_code' );
+		$this->loader->add_shortcode( 'ds_sections_index_code', $DS_sections, 'ds_sections_index_code' );
 	}
 
 	/**
