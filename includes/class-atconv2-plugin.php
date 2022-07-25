@@ -116,6 +116,8 @@ class Atconv2_Plugin {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-atconv2-plugin-admin.php';
 
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/controller/design_type_meta_box.php';
+
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
@@ -159,6 +161,8 @@ class Atconv2_Plugin {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		$Mp_gl_design_type_meta_box = new Mp_gl_design_type_meta_box();
+		$Mp_gl_design_type_meta_box->main();
 	}
 
 	/**
