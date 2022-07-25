@@ -35,9 +35,9 @@ class DS_sections
             'post_status'    => 'publish',
             // 'posts_per_page' => 3,
         );
-        $sectionss = get_posts($args);
+        $sections = get_posts($args);
 
-	include_once ds_atcon_PLAGIN_DIR . '/public/partials/sections/hero.php';
+	include_once ds_atconv2_PLAGIN_DIR . '/public/partials/sections/hero.php';
 	}
 
 }

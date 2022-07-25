@@ -122,6 +122,8 @@ class Atconv2_Plugin {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-atconv2-plugin-public.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/controller/sections.php';
+
 		$this->loader = new Atconv2_Plugin_Loader();
 
 	}

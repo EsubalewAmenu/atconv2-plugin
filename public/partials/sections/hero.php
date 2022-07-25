@@ -1,4 +1,7 @@
 
+
+<?php foreach ($sections as $section) { ?>
+
 	<section class="theme-slide__wrapper">
 		<app-post-teaser-banner class="background--dark theme-slide" data-scrollama-index="2">
 			<header class="post-teaser-banner">
@@ -66,3 +69,5 @@
 			<!---->
 		</ul>
 	</section>
+
+    <?php } ?>
