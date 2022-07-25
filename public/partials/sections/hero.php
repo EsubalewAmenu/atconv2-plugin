@@ -9,12 +9,10 @@
 					<app-loader _nghost-mvrdv-c13="" class="ng-tns-c13-5 ng-star-inserted">
 						<!---->
 					</app-loader><a href="https://mvrdv.nl/themes/9/urbanism">
-						<app-image loading="lazy" class="post-teaser-banner__image is--loaded ng-star-inserted" _nghost-mvrdv-c34="" style="--aspect-ratio: auto"><img _ngcontent-mvrdv-c34="" alt="Urbanism" src="<?php echo get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%25C2%25A9Ossip_005.jpg" srcset="
-                                  <?php echo get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%25C2%25A9Ossip_002.jpg  600w,
-                                  <?php echo get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%C2%A9Ossip.jpg         1200w,
-                                  <?php echo get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%25C2%25A9Ossip_004.jpg 1600w,
-                                  <?php echo get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%25C2%25A9Ossip_003.jpg 1920w
-                                " sizes="auto" loading="lazy" />
+					<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($section->ID), 'thumbnail_size'); ?>
+						<app-image loading="lazy" class="post-teaser-banner__image is--loaded ng-star-inserted" 
+						_nghost-mvrdv-c34="" style="--aspect-ratio: auto"><img _ngcontent-mvrdv-c34="" 
+						alt="Urbanism" src="<?php echo $src ? $src[0] : get_template_directory_uri(); ?>/assets/328_Seoullo7017_2019_%25C2%25A9Ossip_005.jpg" sizes="auto" loading="lazy" />
 							<!---->
 						</app-image>
 						<!---->
@@ -46,14 +44,7 @@
 							<h1 class="post-teaser__heading__title">
 								<a href="https://mvrdv.nl/themes/9/urbanism">
 									<span class="ng-star-inserted">124,673,491</span>
-									<!---->
-									<!---->
 									m² of urban projects
-									<!---->
-									<!---->
-									<!---->
-									<!---->
-									<!---->
 								</a>
 							</h1>
 						</div>
