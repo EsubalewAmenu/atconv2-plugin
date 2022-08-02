@@ -123,6 +123,7 @@ class Atconv2_Plugin {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-atconv2-plugin-public.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/controller/post_footer_meta_box.php';
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/controller/sections.php';
 
@@ -163,6 +164,10 @@ class Atconv2_Plugin {
 
 		$Mp_gl_design_type_meta_box = new Mp_gl_design_type_meta_box();
 		$Mp_gl_design_type_meta_box->main();
+
+
+		$ds_at_post_footer_meta_box = new ds_at_post_footer_meta_box();
+		$ds_at_post_footer_meta_box->main();
 	}
 
 	/**

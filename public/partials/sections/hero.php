@@ -17,8 +17,9 @@
 				<a class="post-teaser-banner__content" href="<?php echo esc_url(get_permalink($section->ID)); ?>">
 					<div class="post-teaser-banner__content__wrapper">
 						<h1 class="post-teaser-banner__content__claim">
-							<span class="post-teaser-banner__content__claim__span ng-star-inserted">smart &amp; </span><span class="post-teaser-banner__content__claim__span ng-star-inserted">liveable cities</span>
-							<!---->
+							<span class="post-teaser-banner__content__claim__span ng-star-inserted">
+							<?php echo $section->post_title ?>
+							</span>
 						</h1>
 						<div class="post-teaser-banner__content__text">
 							<p>
@@ -38,8 +39,8 @@
 						<div class="post-teaser__heading">
 							<h1 class="post-teaser__heading__title">
 								<a href="<?php echo esc_url(get_permalink($section->ID)); ?>">
-									<span class="ng-star-inserted">124,673,491</span>
-									m² of urban projects
+									<span class="ng-star-inserted">
+										<?php echo get_post_meta($section->ID, 'ds_at_post_footer', true) ?>
 								</a>
 							</h1>
 						</div>
