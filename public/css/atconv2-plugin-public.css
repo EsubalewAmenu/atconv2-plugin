@@ -2,3 +2,10 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+ .reduceSize {
+    font-size: 3rem !important;
+  }
+.post-teaser-banner__content__claim {
+    opacity: 1 !important;
+    transition: all ease-in-out 0.3s !important;
+  }
