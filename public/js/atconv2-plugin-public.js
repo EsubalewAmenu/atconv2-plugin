@@ -6,9 +6,13 @@ function isScrolledIntoView(elem) {
 	return elemBottom <= docViewBottom && elemTop >= docViewTop;
 }
 jQuery(window).scroll(function () {
-	jQuery(".post-teaser-banner__content__claim").each(function () {
-		if (isScrolledIntoView(this) === true) {
-			jQuery(this).addClass("reduceSize");
-		}
+	jQuery(".post-teaser-banner__content__claim ").each(function () {
+	  if (isScrolledIntoView(this) === true) {
+		jQuery(this).addClass("reduceSize");
+		jQuery(".post-teaser-banner__image img").addClass("reduceImg");
+	  } else {
+		jQuery(this).removeClass("reduceSize");
+		jQuery(".featured_img").removeClass("reduceImg");
+	  }
 	});
-}); 
+  });
